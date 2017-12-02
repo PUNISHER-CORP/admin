@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <title>Admin panel</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Link -->
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,500,900&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/libs.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="nav-top-wrapper">
+
+
+
+                <div class="left-part show-logo">
+                    <i class="fa fa-cogs"></i>
+                    <div class="logo">  Admin <span>panel</span></div>
+                </div>
+
+                <ul class="nav navbar-top-links navbar-left">
+                    <li><a href="#" id="menu-toggle"><i class="fa fa-bars"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
+
+                </ul>
+            </div>
+
+
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="hide-md">
+                <div class="sidebar-head">
+                    <a href="#" id="menu-toggle"><span class="fa fa-times"></span></a> 
+                    <span class="hide-menu">Navigation</span> 
+                </div>
+                <ul class="sidebar-nav">
+                    <li><a href="/"><i class="fa fa-home"></i>Главная</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i>Пользователи</a></li>
+                    <li><a href="#"><i class="fa fa-file-text"></i>Новости</a></li>
+                </ul>
+            </div>
+
+            <!-- Page content -->
+            <div id="page-content-wrapper" class="page-content-wrapper">
+                <div class="container-fluid">
+
+                    <div class="row bg-title">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h4 class="page-title">пользователи</h4> </div>
+                        <div class="col-lg-12">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="white-box">
+                                <div class="box-title">Cписок пользователей</div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr class="text-muted">
+                                                <th class="text-center">#</th>
+                                                <th>Имя</th>
+                                                <th>Деятельность</th>
+                                                <th>EMAIL</th>
+                                                <th>Зарегистрироват</th>
+                                                <th>Категория</th>
+                                                <th>Управление</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">1</td>
+                                                <td>Daniel Kristeen
+                                                </td>
+                                                <td>Visual Designer
+                                                </td>
+                                                <td>daniel@website.com
+                                                </td>
+                                                <td>15 Mar 1988
+                                                </td>
+                                                <td>
+                                                    <span class="label label-danger">Администратор</span>
+                                                </td>
+                                                <td>
+                                                    <a href="#editUser" class="btn btn-info" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#" class="btn btn-danger"><i class="fa fa-times"></i></a>
+
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">2</td>
+                                                <td>Daniel Kristeen
+                                                </td>
+                                                <td>Visual Designer
+                                                </td>
+                                                <td>daniel@website.com
+                                                </td>
+                                                <td>15 Mar 1988
+                                                </td>
+                                                <td>
+                                                    <span class="label label-info">Пользователь</span>
+                                                </td>
+                                                <td>
+                                                    <a href="#editUser" class="btn btn-info" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#" class="btn btn-danger"><i class="fa fa-times"></i></a>
+
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">3</td>
+                                                <td>Daniel Kristeen
+                                                </td>
+                                                <td>Visual Designer
+                                                </td>
+                                                <td>daniel@website.com
+                                                </td>
+                                                <td>15 Mar 1988
+                                                </td>
+                                                <td>
+                                                    <span class="label label-success">Модератор</span>
+                                                </td>
+                                                <td>
+                                                    <a href="#editUser" class="btn btn-info" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#" class="btn btn-danger"><i class="fa fa-times"></i></a>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Добавить пользователя-->
+                        <div class="col-lg-6">
+                            <div class="white-box">
+                                <div class="box-title">Добавить пользователя</div>
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Логин</label>
+                                        <div class="col-sm-9">
+                                            <div class="input-group">
+                                                <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                                <input type="text" class="form-control" placeholder="Имя пользователя"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Email</label>
+                                        <div class="col-sm-9">
+                                            <div class="input-group">
+                                                <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                                                <input type="email" class="form-control" placeholder="Email"> </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="inputPassword3" class="col-sm-3 control-label">Пароль</label>
+                                        <div class="col-sm-9">
+                                            <div class="input-group">
+                                                <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                                                <input type="password" class="form-control" placeholder="Введите пароль"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword4" class="col-sm-3 control-label">Повторить пароль </label>
+                                        <div class="col-sm-9">
+                                            <div class="input-group">
+                                                <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                                                <input type="password" class="form-control" placeholder="Повторить пароль"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Категория</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control" data-placeholder="Choose a Category" tabindex="1">
+                                                <option value="user">Пользователь</option>
+                                                <option value="admin">Администратор</option>
+                                                <option value="moder">Модератор</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-3 col-sm-9">
+                                            <button type="submit" class="btn btn-info waves-effect waves-light m-t-10">Добавить</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Модальное окно "Редактировать пользователя" -->
+        <div id="editUser" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Заголовок модального окна -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Редактирование пользователя</h4>
+                    </div>
+                    <!-- Основное содержимое модального окна -->
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                           <div class="form-group">
+                               <label class="col-sm-3 control-label">ID</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-address-book"></i></div>
+                                        <input type="text" class="form-control" value="34" disabled> </div>
+                                </div>
+                           </div>
+                            <div class="form-group">
+                               
+                                <label class="col-sm-3 control-label">Логин</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                        <input type="text" class="form-control" value="Admin"> </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Email</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                                        <input type="email" class="form-control" value="admin@mail.com"> </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-3 control-label">Новый пароль</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                                        <input type="password" class="form-control" value=""> </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Категория</label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" data-placeholder="Choose a Category" tabindex="1">
+                                        <option value="user">Пользователь</option>
+                                        <option value="admin">Администратор</option>
+                                        <option value="moder">Модератор</option>
+
+                                    </select>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <!-- Футер модального окна -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Сохранить изменения</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <script src="js/libs.min.js"></script>
+        <script src="js/common.js"></script>
+    </body>
+</html>
