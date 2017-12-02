@@ -1,0 +1,149 @@
+
+$dark-gray: #9b9ba5
+$bg-content: #edf1f5
+html,body
+    font-family: 'Rubik', sans-serif
+    background: #edf1f5
+a
+    color: $dark-gray
+    
+    &:hover
+        text-decoration: none
+        color: #000
+
+/*Navbar*/
+.nav-top-wrapper
+    position: fixed
+    z-index: 2
+    width: 100%
+    background-color: #fff
+        
+    .left-part
+        text-align: center
+        float: left
+        padding: 16px
+        border-right: 1px solid #ebebeb
+
+        i
+            float: left
+            font-size: 28px
+        
+        .logo
+            font-weight: 800
+            font-size: 21px
+            padding: 0 43px 0 44px
+
+            span
+                color: $dark-gray
+                font-weight: 500
+
+
+    .navbar-top-links
+        li
+            float: left
+            a
+                padding: 21px
+                &:hover
+                    color: $dark-gray
+            
+/*Sidebar*/
+#sidebar-wrapper
+    z-index: 1
+    position: fixed
+    background: #2f323e
+    width: 250px
+    height: 100%
+    overflow-y: hidden
+    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08)
+
+    .sidebar-head
+        padding: 16px 20px
+        color: #fff
+        .hide-menu
+            font-size: 20px
+        .fa
+            margin: 0 6px
+            font-size: 20px
+            font-weight: 100
+        a
+            color: #fff
+            &:hover
+                color: #fff
+/*Main content*/
+.page-content-wrapper
+    position: absolute
+    top: 62px
+    width: 100%
+    background-color: $bg-content
+    padding-left: 250px
+.pl-none
+    padding-left: 0
+/*Sidebar stylng*/
+
+
+.sidebar-nav
+
+    padding: 2px 0 0 0
+    
+    
+    list-style: none
+    .active
+            background: #2cabe3
+    li
+        text-indent: 0px
+        line-height: 40px
+        
+        a
+            display: block
+            padding: 15px 35px 15px 20px
+            text-decoration: none
+            color: #97999f
+            &:hover
+                background: #262831
+            i
+                font-size: 21px
+                margin-right: 7px
+/*Users*/
+.label
+    font-size: 14px
+    font-weight: 400
+th
+    font-weight: 400
+.bg-title
+    margin-bottom: 25px
+    background: #f1f2f7
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13)
+    overflow: hidden
+    padding: 5px 5px
+    .page-title
+        text-transform: uppercase
+        font-size: 14px
+        font-weight: 500
+
+.white-box
+    background-color: #fff
+    margin-bottom: 25px
+    padding: 25px 25px
+    .box-title
+        font-weight: 500
+        text-transform: uppercase
+        font-size: 16px
+        margin-bottom: 10px
+        
+    label
+        font-weight: 400
+        span
+            color: red
+            
+@media screen and (max-width: 767px)
+    
+    .hide-md
+        display: none
+    #sidebar-wrapper
+        z-index: 4
+
+    .logo
+        display: none
+
+    .page-content-wrapper
+        padding: 0
