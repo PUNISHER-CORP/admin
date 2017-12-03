@@ -23,3 +23,12 @@ $( "a#menu-toggle" ).click(function() {
 
     }
 });
+
+$( "a#edit-user").click(function(){
+    var data = $(this).data();
+    $('#editUser').modal('show');
+    $('#id-user').attr('value', data.key);
+    $('#login').attr('value', "Админ");
+    $('#email').attr('value', "123@mail.com");
+    
+});

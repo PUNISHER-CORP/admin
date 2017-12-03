@@ -92,7 +92,7 @@ a {
         margin-right: 7px; }
 
 /*Users*/
-.label {
+.label, label {
   font-size: 14px;
   font-weight: 400; }
 
