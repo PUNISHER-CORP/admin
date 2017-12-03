@@ -30,5 +30,16 @@ $( "a#edit-user").click(function(){
     $('#id-user').attr('value', data.key);
     $('#login').attr('value', "Админ");
     $('#email').attr('value', "123@mail.com");
-    
+
+});
+
+$("#send-query").submit(function(){
+    $.ajax({
+        type: "GET",
+        url: "send-query.php",
+        data: $(this).serialize() 
+    }).done(function(){
+        alert("data");
+    });
+    return false;
 });
