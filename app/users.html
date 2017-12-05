@@ -64,9 +64,9 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
+                                            <tr id="user-list">
                                                 <td class="text-center">1</td>
-                                                <td id="user-name">Daniel Kristeen
+                                                <td>Daniel Kristeen
                                                 </td>
                                                 <td>Visual Designer
                                                 </td>
@@ -78,16 +78,13 @@
                                                     <span class="label label-danger">Администратор</span>
                                                 </td>
                                                 <td>
-                                                    <a id="edit-user" data-key="1" href="#" class="btn btn-info" >
-                                                        <i class="fa fa-pencil"></i>
-                                                    </a>
+                                                    <a id="edit-user" href="" data-id="1" data-nick="Admin" data-email="123@" class="btn btn-info" data-toggle="modal"><i class="fa fa-pencil"></i></a>
                                                     <a href="#" class="btn btn-danger">
                                                         <i class="fa fa-times"></i>
                                                     </a>    
                                                 </td>
 
-                                            </tr>
-                                            <tr>
+                                            </tr><tr id="user-list">
                                                 <td class="text-center">2</td>
                                                 <td>Daniel Kristeen
                                                 </td>
@@ -98,15 +95,16 @@
                                                 <td>15 Mar 1988
                                                 </td>
                                                 <td>
-                                                    <span class="label label-info">Пользователь</span>
+                                                    <span class="label label-danger">Администратор</span>
                                                 </td>
                                                 <td>
-                                                    <a id="edit-user" data-key="2" href="#" class="btn btn-info" data-toggle="modal"><i class="fa fa-pencil"></i></a>
-                                                    <a href="#" class="btn btn-danger"><i class="fa fa-times"></i></a>
+                                                    <a id="edit-user" href="" data-id="2" data-nick="Lol" data-email="321@" class="btn btn-info" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#" class="btn btn-danger">
+                                                        <i class="fa fa-times"></i>
+                                                    </a>    
                                                 </td>
 
-                                            </tr>
-                                            <tr>
+                                            </tr><tr id="user-list">
                                                 <td class="text-center">3</td>
                                                 <td>Daniel Kristeen
                                                 </td>
@@ -117,13 +115,17 @@
                                                 <td>15 Mar 1988
                                                 </td>
                                                 <td>
-                                                    <span class="label label-success">Модератор</span>
+                                                    <span class="label label-danger">Администратор</span>
                                                 </td>
                                                 <td>
-                                                    <a id="edit-user" data-key="3" href="#" class="btn btn-info" data-toggle="modal"><i class="fa fa-pencil"></i></a>
-                                                    <a href="#" class="btn btn-danger"><i class="fa fa-times"></i></a>
+                                                    <a id="edit-user" href="" data-id="{{$user->id}}" data-nick="{{$user->profile['name']}}" data-email="{{$user->email}}" class="btn btn-info" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#" class="btn btn-danger">
+                                                        <i class="fa fa-times"></i>
+                                                    </a>    
                                                 </td>
+
                                             </tr>
+                                           
                                         </tbody>
                                     </table>
                                 </div>
@@ -219,7 +221,7 @@
                                 <div class="col-sm-9">
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                                        <input id="login" type="text" name="login" class="form-control" value=""> 
+                                        <input id="nick"  type="text" name="login" class="form-control" value=""> 
                                     </div>
                                 </div>
                             </div>      

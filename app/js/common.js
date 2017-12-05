@@ -25,21 +25,10 @@ $( "a#menu-toggle" ).click(function() {
 });
 
 $( "a#edit-user").click(function(){
-    var data = $(this).data();
+    var show = $(this).data();
     $('#editUser').modal('show');
-    $('#id-user').attr('value', data.key);
-    $('#login').attr('value', "Админ");
-    $('#email').attr('value', "123@mail.com");
+    $('#id-user').attr('value', show.id);
+    $('#nick').attr('value', show.nick);
+    $('#email').attr('value', show.email);
 
-});
-
-$("#send-query").submit(function(){
-    $.ajax({
-        type: "GET",
-        url: "send-query.php",
-        data: $(this).serialize() 
-    }).done(function(){
-        alert("data");
-    });
-    return false;
 });
