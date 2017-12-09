@@ -1,4 +1,10 @@
 /*Menu toogle*/
+$(document).ready(function() {
+        $('#text').summernote({
+            lang: 'ru-RU',
+            height: 300,
+        });
+});
 
 $( "a#menu-toggle" ).click(function() {
     if ($(window).width() <= 767){
