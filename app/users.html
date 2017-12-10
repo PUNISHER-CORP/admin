@@ -51,30 +51,30 @@
                             <div class="white-box">
                                 <div class="box-title">Cписок пользователей</div>
                                 <div class="table-responsive">
-                                    <table class="table table-hover">
+                                    <table class="table table-hover table-bordered">
                                         <thead>
                                             <tr class="text-muted">
-                                                <th class="text-center">#</th>
+                                                <th class="hidden-xs text-center">ID</th>
                                                 <th>Имя</th>
-                                                <th>Деятельность</th>
-                                                <th>EMAIL</th>
-                                                <th>Зарегистрироват</th>
-                                                <th>Категория</th>
-                                                <th>Управление</th>
+                                                <th class="visible-lg">Деятельность</th>
+                                                <th class="visible-lg visible-md">EMAIL</th>
+                                                <th width="10%"  class="visible-lg">Зарегистрирован</th>
+                                                <th width="10%" class="hidden-xs">Категория</th>
+                                                <th width="10%" >Управление</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr id="user-list">
-                                                <td class="text-center">1</td>
+                                                <td class="hidden-xs text-center">1</td>
                                                 <td>Daniel Kristeen
                                                 </td>
-                                                <td>Visual Designer
+                                                <td class="visible-lg">Visual Designer
                                                 </td>
-                                                <td>daniel@website.com
+                                                <td class="visible-lg visible-md">daniel@website.com
                                                 </td>
-                                                <td>15 Mar 1988
+                                                <td class="visible-lg">15 Mar 1988
                                                 </td>
-                                                <td>
+                                                <td class="hidden-xs">
                                                     <span class="label label-danger">Администратор</span>
                                                 </td>
                                                 <td>
@@ -84,48 +84,49 @@
                                                     </a>    
                                                 </td>
 
-                                            </tr><tr id="user-list">
-                                                <td class="text-center">2</td>
+                                            </tr>
+                                            <tr id="user-list">
+                                                <td class="hidden-xs text-center">1</td>
                                                 <td>Daniel Kristeen
                                                 </td>
-                                                <td>Visual Designer
+                                                <td class="visible-lg">Visual Designer
                                                 </td>
-                                                <td>daniel@website.com
+                                                <td class="visible-lg visible-md">daniel@website.com
                                                 </td>
-                                                <td>15 Mar 1988
+                                                <td class="visible-lg">15 Mar 1988
                                                 </td>
-                                                <td>
+                                                <td class="hidden-xs">
                                                     <span class="label label-danger">Администратор</span>
                                                 </td>
                                                 <td>
-                                                    <a id="edit-user" href="" data-id="2" data-nick="Lol" data-email="321@" class="btn btn-info" data-toggle="modal"><i class="fa fa-pencil"></i></a>
-                                                    <a href="#" class="btn btn-danger">
-                                                        <i class="fa fa-times"></i>
-                                                    </a>    
-                                                </td>
-
-                                            </tr><tr id="user-list">
-                                                <td class="text-center">3</td>
-                                                <td>Daniel Kristeen
-                                                </td>
-                                                <td>Visual Designer
-                                                </td>
-                                                <td>daniel@website.com
-                                                </td>
-                                                <td>15 Mar 1988
-                                                </td>
-                                                <td>
-                                                    <span class="label label-danger">Администратор</span>
-                                                </td>
-                                                <td>
-                                                    <a id="edit-user" href="" data-id="{{$user->id}}" data-nick="{{$user->profile['name']}}" data-email="{{$user->email}}" class="btn btn-info" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                                                    <a id="edit-user" href="" data-id="1" data-nick="Admin" data-email="123@" class="btn btn-info" data-toggle="modal"><i class="fa fa-pencil"></i></a>
                                                     <a href="#" class="btn btn-danger">
                                                         <i class="fa fa-times"></i>
                                                     </a>    
                                                 </td>
 
                                             </tr>
-                                           
+                                            <tr id="user-list">
+                                                <td class="hidden-xs text-center">1</td>
+                                                <td>Daniel Kristeen
+                                                </td>
+                                                <td class="visible-lg">Visual Designer
+                                                </td>
+                                                <td class="visible-lg visible-md">daniel@website.com
+                                                </td>
+                                                <td class="visible-lg">15 Mar 1988
+                                                </td>
+                                                <td class="hidden-xs">
+                                                    <span class="label label-danger">Администратор</span>
+                                                </td>
+                                                <td>
+                                                    <a id="edit-user" href="" data-id="1" data-nick="Admin" data-email="123@" class="btn btn-info" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#" class="btn btn-danger">
+                                                        <i class="fa fa-times"></i>
+                                                    </a>    
+                                                </td>
+
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -251,21 +252,21 @@
                                         <option value="admin">Администратор</option>
                                         <option value="moder">Модератор</option>
                                     </select>
-                                    
+
                                 </div>
-                                
+
                             </div>
                             <div class="form-group text-center">
                                 <div class="col-sm-12">
                                     <button id="send-query" type="subbmit" class="btn btn-primary">Сохранить изменения</button>
                                 </div>
                             </div>
-                            
+
                         </form>
                     </div>
                     <!-- Footer modal window -->
                     <div class="modal-footer">
-                        
+
                         <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
                     </div>
                 </div>
