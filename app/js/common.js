@@ -2,7 +2,7 @@
 $(document).ready(function() {
         $('#text').summernote({
             lang: 'ru-RU',
-            height: 300,
+            height: 300
         });
 });
 
