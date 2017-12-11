@@ -45,7 +45,61 @@ a
                 padding: 21px
                 &:hover
                     color: $dark-gray
-            
+            .dropdown-menu
+                border: 1px solid rgba(120,130,140,.13)
+                border-radius: 0
+                box-shadow: 0 3px 12px rgba(0,0,0,.05)!important
+                -webkit-box-shadow: 0!important
+                -moz-box-shadow: 0!important
+                padding-bottom: 8px
+                margin-top: 0
+            .mail
+                width: 280px
+                overflow: auto
+                padding-bottom: 0
+                li
+                    display: block
+                    width: 100%
+                    .mail-title
+                        border-bottom: 1px solid rgba(0,0,0,.1)
+                        font-size: 15px
+                        font-weight: 600
+                        padding: 10px 10px
+                        text-align: center
+                        width: 100%
+                    .message
+                        box-sizing: border-box
+                        a
+                            border-bottom: 1px solid rgba(120,130,140,.13)
+                            display: block
+                            padding: 9px 15px
+                            &:hover
+                                background:#f7fafc
+                        .user-img
+                            width: 40px
+                            float: left
+                            position: relative
+                            margin: 0 10px 15px 0
+                            img
+                                width: 100%
+                            .img-circle
+                                border-radius: 50%
+                        .mail-content
+                            h5
+                                font-weight: 500                             
+                                margin: 0
+                                color: #313131
+                            .mail-desc
+                                font-size: 12px
+                                display: block
+                                margin: 5px 0
+                                color: #313131
+                                font-weight: 300
+                            .time
+                                display: block
+                                font-size: 10px
+                                color: #313131
+                                font-weight: 100
 /*Sidebar*/
 #sidebar-wrapper
     z-index: 1
@@ -147,3 +201,5 @@ th
 
     .page-content-wrapper
         padding: 0
+    .mail
+        margin-left: -110px

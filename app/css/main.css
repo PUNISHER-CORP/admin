@@ -35,6 +35,63 @@ a {
       padding: 21px; }
       .nav-top-wrapper .navbar-top-links li a:hover {
         color: #9b9ba5; }
+    .nav-top-wrapper .navbar-top-links li .dropdown-menu {
+      border: 1px solid rgba(120, 130, 140, 0.13);
+      -webkit-border-radius: 0;
+              border-radius: 0;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05) !important;
+      -webkit-box-shadow: 0 !important;
+      -moz-box-shadow: 0 !important;
+      padding-bottom: 8px;
+      margin-top: 0; }
+    .nav-top-wrapper .navbar-top-links li .mail {
+      width: 280px;
+      overflow: auto;
+      padding-bottom: 0; }
+      .nav-top-wrapper .navbar-top-links li .mail li {
+        display: block;
+        width: 100%; }
+        .nav-top-wrapper .navbar-top-links li .mail li .mail-title {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          font-size: 15px;
+          font-weight: 600;
+          padding: 10px 10px;
+          text-align: center;
+          width: 100%; }
+        .nav-top-wrapper .navbar-top-links li .mail li .message {
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box; }
+          .nav-top-wrapper .navbar-top-links li .mail li .message a {
+            border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+            display: block;
+            padding: 9px 15px; }
+            .nav-top-wrapper .navbar-top-links li .mail li .message a:hover {
+              background: #f7fafc; }
+          .nav-top-wrapper .navbar-top-links li .mail li .message .user-img {
+            width: 40px;
+            float: left;
+            position: relative;
+            margin: 0 10px 15px 0; }
+            .nav-top-wrapper .navbar-top-links li .mail li .message .user-img img {
+              width: 100%; }
+            .nav-top-wrapper .navbar-top-links li .mail li .message .user-img .img-circle {
+              -webkit-border-radius: 50%;
+                      border-radius: 50%; }
+          .nav-top-wrapper .navbar-top-links li .mail li .message .mail-content h5 {
+            font-weight: 500;
+            margin: 0;
+            color: #313131; }
+          .nav-top-wrapper .navbar-top-links li .mail li .message .mail-content .mail-desc {
+            font-size: 12px;
+            display: block;
+            margin: 5px 0;
+            color: #313131;
+            font-weight: 300; }
+          .nav-top-wrapper .navbar-top-links li .mail li .message .mail-content .time {
+            display: block;
+            font-size: 10px;
+            color: #313131;
+            font-weight: 100; }
 
 /*Sidebar*/
 #sidebar-wrapper {
@@ -132,4 +189,6 @@ th {
   .logo {
     display: none; }
   .page-content-wrapper {
-    padding: 0; } }
+    padding: 0; }
+  .mail {
+    margin-left: -110px; } }
