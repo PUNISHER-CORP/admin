@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru">
     <head>
-        <title>Admin panel</title>
+        <title>Профиль</title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,8 +10,6 @@
         <link rel="stylesheet" href="css/libs.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/font-awesome.css">
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
-
     </head>
     <body>
         <div id="wrapper">
@@ -123,9 +121,9 @@
                     <span class="hide-menu">Navigation</span> 
                 </div>
                 <ul class="sidebar-nav">
-                    <li><a href="#"><i class="fa fa-home"></i>Главная</a></li>
+                    <li><a href="/"><i class="fa fa-home"></i>Главная</a></li>
                     <li><a href="users.html"><i class="fa fa-user"></i>Пользователи</a></li>
-                    <li><a href="#"><i class="fa fa-file-text"></i>Новости</a></li>
+                    <li><a href="news.html"><i class="fa fa-file-text"></i>Новости</a></li>
                 </ul>
             </div>
             <!-- Page content -->
@@ -133,38 +131,97 @@
                 <div class="container-fluid">
                     <div class="row bg-title">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <h4 class="page-title">Добавить статью</h4> </div>
+                            <h4 class="page-title">Профиль</h4> </div>
                         <div class="col-lg-12">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
+                            <div class="user-box">
+                                <div class="user-header">
+                                    <div class="user-bg">
+                                        <img src="http://html.codedthemes.com/guru-able/files/assets/images/user-profile/bg-img1.jpg" alt="user-bg">
+                                    </div>
+                                    <div class="user-info">
+                                        <div class="avatar">
+                                            <img src="http://html.codedthemes.com/guru-able/files/assets/images/user-profile/user-img.jpg" alt="avatar">
+                                        </div>
+                                        <div class="u-name">
+                                            <p>Admin</p>
+                                            <span>Administrator</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
                             <div class="white-box">
-                                <div class="box-title">Добавить новость</div>
-                                <form>
-                                    <div class="row">
-                                        <div class="form-group col-lg-4">
-                                            <label for="exampleInputEmail1">Название</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Введите название новости"> </div>
+                                <div class="box-title">About me
+                                    <a  class="btn btn-info pull-right" href="#"><i class="fa fa-cog"></i></a>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="table-responsive">
+                                            <table class="table m-0">
+                                                <tbody class="user-table">
+                                                    <tr>
+                                                        <th>Full Name</th>
+                                                        <td>Josephine Villa</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Gender</th>
+                                                        <td>Female</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Birth Date</th>
+                                                        <td>October 25th, 1990</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Marital Status</th>
+                                                        <td>Single</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Location</th>
+                                                        <td>New York, USA</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="form-group col-lg-4">
-                                            <label for="exampleInputEmail1">Краткое описание</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Введите краткое описание"> </div>
+
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody class="user-table">
+                                                    <tr>
+                                                        <th>Email</th>
+                                                        <td><a href="#!">Demo@example.com</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Mobile Number</th>
+                                                        <td>(0123) - 4567891</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Twitter</th>
+                                                        <td>@xyz</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Skype</th>
+                                                        <td>demo.skype</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Website</th>
+                                                        <td><a href="#!">www.demo.com</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
 
-
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Полное описание</label>
-                                        <textarea class="form-control" name="text" id="text"></textarea> 
-                                    </div>
-
-                                    <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Добавить</button>
-                                </form>
-                                <form action="">
-
-                                </form>
-
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -173,7 +230,6 @@
         </div>
         <!-- Optional JavaScript -->
         <script src="js/libs.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
         <script src="js/common.js"></script>
     </body>
 </html>
