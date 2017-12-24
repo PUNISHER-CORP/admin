@@ -312,7 +312,7 @@ th {
 
 @media screen and (max-width: 767px) {
   .nav-top-wrapper .navbar-right li a {
-    padding: 10px 14px 0 14px; }
+    padding: 0 14px 0 14px; }
   .nav {
     display: inline-block; }
   .hide-md {
