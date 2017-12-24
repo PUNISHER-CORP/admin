@@ -1,6 +1,8 @@
 html, body {
   font-family: 'Rubik', sans-serif;
-  background: #edf1f5; }
+  background: #edf1f5;
+  width: 100%;
+  height: 100%; }
 
 a {
   color: #9b9ba5; }
@@ -263,6 +265,50 @@ th {
 .user-table td {
   color: #777;
   font-weight: 500; }
+
+/*Login page*/
+.login-font {
+  color: #d0d0d0;
+  font-weight: 300; }
+
+.login-page {
+  background-color: #23282d;
+  position: relative; }
+  .login-page .login-box {
+    font-weight: 100;
+    position: absolute;
+    width: 250px;
+    margin: -165px auto;
+    padding: 10px 0;
+    top: 50%;
+    overflow: auto;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    .login-page .login-box .logo-login {
+      color: #fff;
+      font-weight: bold;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin: 20px 0;
+      text-align: center; }
+      .login-page .login-box .logo-login span {
+        color: #d0d0d0; }
+    .login-page .login-box .btn-sign-in {
+      width: 100%;
+      font-weight: 100;
+      background: #00a0d2;
+      -webkit-border-radius: 0px;
+              border-radius: 0px;
+      color: #fff; }
+    .login-page .login-box .input-group-addon, .login-page .login-box .form-control {
+      -webkit-border-radius: 0;
+              border-radius: 0; }
+    .login-page .login-box .checkbox {
+      margin: 20px 0; }
+      .login-page .login-box .checkbox label {
+        color: #d0d0d0;
+        font-weight: 100; }
 
 @media screen and (max-width: 767px) {
   .nav-top-wrapper .navbar-right li a {
